@@ -11,6 +11,7 @@
   --secondary-bg-color: #111827;
   --theme-bg-color: #14532d;
   --icon-bg-color: #14532d80;
+  --btn-hover: #15803d;
   --border-color: #1f2937;
   --heading-color: #ffffff;
   --text-color: #9ca3af;
@@ -25,4 +26,119 @@
   --text-size: 16px;
   --section-heading-size: 36px;
   --card-heading-size: 20px;
+}
+
+body {
+  font-family: Manrope, system-ui, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-size: var(--text-size);
+}
+img {
+  max-width: 100%;
+}
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.btn {
+  text-decoration: none;
+  color: var(--heading-color);
+  background-color: var(--primary-color);
+  border: 1px solid var(--border-color);
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: var(--secondary-heading-font-weight);
+  transition: background-color 0.3s;
+}
+.btn:hover {
+  background-color: var(--btn-hover);
+}
+header {
+  font-size: calc(var(--text-size) - 2px);
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+.container {
+  max-width: 1536px;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin: 0 auto;
+}
+.logo {
+  grid-column: span 2;
+  display: flex;
+}
+.logo img {
+  height: 40px;
+}
+nav {
+  grid-column: span 8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+nav ul li {
+  list-style-type: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+  transition: color 0.3s;
+}
+nav ul li a:hover {
+  color: var(--heading-color);
+}
+.a {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+}
+nav ul li.group {
+  position: relative;
+}
+
+ul.dropdown {
+  display: none;
+  flex-direction: column;
+  z-index: 99;
+  padding: 8px;
+  background-color: var(--secondary-bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  position: absolute;
+  top: 28px;
+  min-width: 190px;
+  gap: 0;
+  transition: display 5s;
+}
+ul.dropdown li a {
+  border-radius: 8px;
+  display: block;
+  padding: 8px 16px;
+}
+ul.dropdown a:hover {
+  background-color: var(--border-color);
+}
+nav ul li.group:hover ul.dropdown {
+  display: flex;
+}
+.nav_btn {
+  grid-column: span 2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 16px;
+}
+.nav_btn .icon {
+  font-size: 15px;
+  color: var(--text-color);
+  background-color: transparent;
 }
