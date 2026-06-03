@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Colors */
+  --primary-color: #16a34a;
+  --bg-color: #030712;
+  --secondary-bg-color: #111827;
+  --theme-bg-color: #14532d;
+  --icon-bg-color: #14532d80;
+  --border-color: #1f2937;
+  --heading-color: #ffffff;
+  --text-color: #9ca3af;
+
+  /* Font Weight */
+  --heading-font-weight: 700;
+  --card-heading-ont-weight: 600;
+  --secondary-heading-font-weight: 500;
+  --text-font-weight: 400;
+
+  /* Font Size */
+  --text-size: 16px;
+  --section-heading-size: 36px;
+  --card-heading-size: 20px;
+}
