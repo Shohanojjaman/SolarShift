@@ -96,6 +96,15 @@ section {
 .secondary_btn:hover {
   background-color: var(--border-color);
 }
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--secondary-bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 32px;
+  line-height: 1.5;
+}
 
 header {
   font-size: 0.875rem;
@@ -104,6 +113,7 @@ header {
   border-bottom: 1px solid var(--border-color);
   position: sticky;
   top: 0;
+  z-index: 999;
 }
 
 .container {
@@ -187,7 +197,8 @@ ul.dropdown a:hover {
   background-color: var(--border-color);
 }
 
-nav ul li.group:hover ul.dropdown {
+nav ul li:hover ul.dropdown,
+ul.dropdown:hover ul.dropdown {
   display: flex;
 }
 
@@ -504,16 +515,9 @@ form input[type='submit'] {
 }
 
 .service_card {
-  display: flex;
-  flex-direction: column;
   align-items: flex-start;
   gap: 8px;
   grid-column: span 4;
-  background-color: var(--secondary-bg-color);
-  border: 1px solid var(--border-color);
-  border-radius: 16px;
-  padding: 32px;
-  line-height: 1.5;
 }
 
 .icon {
@@ -542,11 +546,10 @@ section#products {
   overflow: hidden;
 }
 .product_img {
-  /* background-image: url(./images/product3.jfif); */
   width: 100%;
   aspect-ratio: 3/2;
   transition: all 0.5s;
-  z-index: -1;
+  /* z-index: -1; */
 }
 
 .product_img:hover {
@@ -624,14 +627,9 @@ section.financing {
 
 .financing_card {
   grid-column: span 4;
-  display: flex;
-  flex-direction: column;
   align-items: flex-start;
   gap: 8px;
   background-color: var(--border-color);
-  border-radius: 16px;
-  padding: 32px;
-  line-height: 1.5;
   position: relative;
   font-size: 0.875rem;
 }
@@ -719,4 +717,59 @@ span.num {
 
 .process_box h3 {
   font-size: 1.125rem;
+}
+
+/* Testimonials Area */
+section.testimonials {
+  background-color: var(--secondary-bg-color);
+}
+.testimonials_card {
+  /* position: absolute; */
+  grid-column: span 4;
+  background-color: var(--border-color);
+  gap: 16px;
+}
+.rating_box {
+  color: #ffb900;
+  font-size: 17px;
+}
+.testimonials_card q {
+  color: var(--light-text-color);
+}
+.testimonials_card hr {
+  --border-color: #374151;
+  border: 1px solid var(--border-color);
+}
+.testimonials_card .client {
+  font-size: 0.875rem;
+}
+.testimonials_card .client h3 {
+  font-size: 1rem;
+}
+.slider {
+  position: relative;
+  overflow: hidden;
+}
+.swiper_btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--border-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 1.125rem;
+  font-weight: var(--heading-font-weight);
+  top: calc(50% - (40px / 2));
+  box-shadow:
+    0 20px 25px -5px rgba(0, 0, 0, 0.4),
+    0 8px 10px -6px rgba(0, 0, 0, 0.4);
+}
+#swiper_prev {
+  left: 0;
+}
+#swiper_next {
+  right: 0;
 }
