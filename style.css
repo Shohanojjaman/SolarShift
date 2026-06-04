@@ -1035,3 +1035,20 @@ footer .container > div:nth-child(3) ul li address {
 .copyright > div a:hover {
   color: #fff;
 }
+
+/* Cookies */
+.cookies {
+  padding: 24px;
+  background-color: var(--secondary-bg-color);
+  border-top: 1px solid var(--border-color);
+  font-size: 0.875rem;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.cookies .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
