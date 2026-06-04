@@ -20,6 +20,7 @@ html {
   --text-color: #9ca3af;
   --theme-text-color: #4ade80;
   --light-text-color: #d1d5db;
+  --orange: #f59e0b;
 
   /* Font Weight */
   --heading-font-weight: 700;
@@ -249,7 +250,11 @@ section.hero article.content {
 }
 
 .content h1 .highlighted_heading {
-  background-image: linear-gradient(to right, var(--primary-color), #f59e0b);
+  background-image: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--orange)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -610,4 +615,68 @@ section.impact .sub_heading {
 .impact_box h3 {
   font-size: 3rem;
   line-height: 1;
+}
+
+/* Financing Area */
+section.financing {
+  background-color: var(--secondary-bg-color);
+}
+
+.financing_card {
+  grid-column: span 4;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  background-color: var(--border-color);
+  border-radius: 16px;
+  padding: 32px;
+  line-height: 1.5;
+  position: relative;
+  font-size: 0.875rem;
+}
+
+.financing_card span {
+  position: absolute;
+  background-color: var(--orange);
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: var(--secondary-heading-font-weight);
+  padding: 4px 12px;
+  border-radius: 30px;
+  top: -12px;
+  right: 24px;
+}
+
+.financing_card h3 {
+  font-size: 1.25rem;
+}
+.financing_list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.financing_list > div {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  gap: 12px;
+}
+.financing_list > div i {
+  color: var(--primary-color);
+}
+.financing_list > div p {
+  font-size: 0.875rem;
+}
+
+.financing_card .secondary_btn {
+  color: var(--theme-text-color);
+  border: 1px solid var(--theme-text-color);
+  background-color: transparent;
+  width: 100%;
+  text-align: center;
+  margin-top: 16px;
+}
+.financing_card .secondary_btn:hover {
+  background-color: #14532d4d;
 }
