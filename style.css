@@ -74,7 +74,7 @@ section {
   padding: 10px 20px;
   border-radius: 8px;
   font-weight: var(--secondary-heading-font-weight);
-  transition: background-color 0.3s;
+  transition: all 0.3s;
 }
 
 .btn:hover {
@@ -91,7 +91,7 @@ section {
   padding: 10px 20px;
   border-radius: 8px;
   font-weight: var(--secondary-heading-font-weight);
-  transition: background-color 0.3s;
+  transition: all 0.3s;
 }
 .secondary_btn:hover {
   background-color: var(--border-color);
@@ -772,4 +772,38 @@ section.testimonials {
 }
 #swiper_next {
   right: 0;
+}
+
+/* CTA Area */
+section.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  background-color: var(--theme-bg-color);
+}
+section.cta .section_title {
+  color: #ffffff;
+  margin-bottom: 0;
+}
+section.cta .btn_group {
+}
+section.cta .btn_group .btn {
+  font-size: 0.875rem;
+  border-color: #ffffff;
+  background-color: #ffffff;
+  color: var(--primary-color);
+}
+section.cta .btn_group .btn:hover {
+  border: 1px solid #ffffff;
+  background: transparent;
+  color: #ffffff;
+}
+section.cta .btn_group .secondary_btn {
+  font-size: 0.875rem;
+  background-color: transparent;
+  border-color: #ffffff;
+}
+section.cta .btn_group .secondary_btn:hover {
+  background-color: color-mix(#ffffff 10%, transparent);
 }
