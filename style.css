@@ -840,3 +840,85 @@ section.faq .faq_container .question {
   display: none;
   font-size: 0.875rem;
 }
+
+/* Contact Area */
+#contact .container {
+  gap: 48px;
+}
+#contact form {
+  grid-column: span 12;
+  width: 42rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
+
+#contact form .service,
+#contact form .message {
+  grid-column: span 2;
+}
+
+#contact form .label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.875rem;
+}
+#contact form .label input,
+#contact form .label textarea,
+#contact form .label select {
+  background-color: var(--border-color);
+  border: 1px solid #374151;
+  padding: 12px 16px;
+  color: white;
+  font-size: 1rem;
+  border-radius: 8px;
+  outline: transparent;
+  transition: outline 0.3s;
+  flex-basis: 100%;
+}
+#contact form input[type='submit'] {
+  justify-self: self-start;
+  padding: 12px 24px;
+}
+#contact form .label input:focus,
+#contact form .label textarea:focus,
+#contact form .label select:focus {
+  outline: 2px solid var(--primary-color);
+}
+#contact form .label input::placeholder,
+#contact form .label textarea::placeholder,
+#contact form .label select::placeholder {
+  color: var(--text-color);
+  font-family: Manrope, system-ui, sans-serif;
+}
+
+.office_hour {
+  grid-column: span 12;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 42rem;
+  margin: 0 auto;
+  padding: 24px;
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+}
+.office_hour h3 {
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.office_hour > div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+}
+
+.office_hour > div p:last-child {
+  color: #fff;
+}
