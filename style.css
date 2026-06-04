@@ -4,6 +4,9 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 :root {
   /* Colors */
   --primary-color: #16a34a;
@@ -20,7 +23,7 @@
 
   /* Font Weight */
   --heading-font-weight: 700;
-  --card-heading-ont-weight: 600;
+  --card-heading-font-weight: 600;
   --secondary-heading-font-weight: 500;
   --text-font-weight: 400;
 
@@ -35,7 +38,7 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   font-size: var(--text-size);
-  line-height: 20px;
+  line-height: 1.125;
 }
 
 img {
@@ -191,7 +194,7 @@ nav ul li.group:hover ul.dropdown {
   gap: 16px;
 }
 
-.nav_btn .icon {
+.nav_btn i {
   font-size: 15px;
   color: var(--text-color);
   background-color: transparent;
@@ -203,8 +206,8 @@ nav ul li.group:hover ul.dropdown {
   height: max(100vh, 850px);
 }
 
-.hero .container {
-  gap: 48px;
+section .container {
+  gap: 40px;
 }
 
 article.content {
@@ -225,12 +228,12 @@ article.content {
   border-radius: 30px;
   gap: 8px;
   font-size: 12px;
-  color: white;
+  color: var(--theme-text-color);
 }
 
 .indicator i {
-  font-size: 8px;
   color: var(--primary-color);
+  font-size: 8px;
 }
 
 .content h1 {
@@ -463,4 +466,56 @@ form input[type='submit'] {
 .feature p {
   font-size: 0.875rem;
   line-height: 1.5;
+}
+
+/* Services Area */
+section#service {
+  padding: 112px 0;
+}
+.section_title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 16px;
+  max-width: 48rem;
+  margin: 0 auto 64px;
+}
+.sub_heading {
+  padding: 4px 12px;
+  border: none;
+  font-size: 0.875rem;
+}
+
+.section_heading {
+  font-size: 2.25rem;
+}
+.section_title p {
+  font-size: 1.125rem;
+}
+
+.service_card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  grid-column: span 4;
+  background-color: var(--secondary-bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 32px;
+  line-height: 1.5;
+}
+.service_card .icon {
+  background-color: var(--icon-bg-color);
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  text-align: center;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 8px;
+}
+.service_card h3 {
+  font-size: 1.125rem;
+  font-weight: var(--card-heading-font-weight);
 }
