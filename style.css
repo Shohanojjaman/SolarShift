@@ -90,7 +90,7 @@ h6 {
 }
 
 header {
-  font-size: calc(var(--text-size) - 2px);
+  font-size: 0.875rem;
   background-color: var(--bg-color);
   padding: 20px 0;
   border-bottom: 1px solid var(--border-color);
@@ -234,7 +234,7 @@ article.content {
 }
 
 .content h1 {
-  font-size: 60px;
+  font-size: 3.75rem;
   line-height: 60px;
 }
 
@@ -245,12 +245,12 @@ article.content {
 }
 
 article.content h1 + p {
-  font-size: var(--text-size);
+  font-size: 1rem;
   line-height: 28px;
 }
 
 .content p {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .btn_group {
@@ -295,8 +295,8 @@ article.content h1 + p {
 }
 
 .counter > div h3 {
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 1.5rem;
+  line-height: calc(2 / 1.5);
   color: var(--theme-text-color);
 }
 form {
@@ -317,11 +317,11 @@ form {
 }
 
 .form_heading h3 {
-  font-size: calc(var(--text-size) + 2px);
+  font-size: 1.125rem;
 }
 
 .form_heading p {
-  font-size: calc(var(--text-size) - 2px);
+  font-size: 0.875rem;
 }
 
 .form_field {
@@ -332,7 +332,7 @@ form {
 
 form label {
   color: var(--light-text-color);
-  font-size: calc(var(--text-size) - 2px);
+  font-size: 0.875rem;
   font-weight: var(--secondary-heading-font-weight);
 }
 
@@ -341,7 +341,7 @@ form select {
   border: 1px solid #374151;
   padding: 10px 16px;
   color: white;
-  font-size: var(--text-size);
+  font-size: 1rem;
   border-radius: 8px;
   outline: none;
 }
@@ -356,7 +356,7 @@ form select {
 .label span {
   color: var(--theme-text-color);
   font-weight: var(--heading-font-weight);
-  font-size: calc(var(--text-size) + 2px);
+  font-size: 1.125rem;
 }
 
 form input[type='range'] {
@@ -391,7 +391,7 @@ form input[type='range']::-webkit-slider-thumb {
 }
 
 .range_minmax {
-  font-size: calc(var(--text-size) - 4px);
+  font-size: 0.75rem;
 }
 
 .form_card {
@@ -406,14 +406,14 @@ form input[type='range']::-webkit-slider-thumb {
   flex-basis: calc(50% - 16px);
   background-color: var(--icon-bg-color);
   color: var(--primary-color);
-  font-size: calc(var(--text-size) - 4px);
+  font-size: 0.75rem;
   text-align: center;
   padding: 16px;
   border-radius: 12px;
 }
 
 .form_card .card_box h3 {
-  font-size: calc(var(--text-size) + 8px);
+  font-size: 1.5rem;
   color: var(--theme-text-color);
   margin-bottom: 4px;
 }
@@ -439,5 +439,28 @@ form input[type='range']::-webkit-slider-thumb {
 form input[type='submit'] {
   padding: 12px 0;
   cursor: pointer;
-  font-size: calc(var(--text-size) - 2px);
+  font-size: 0.875rem;
+}
+.wave {
+  color: var(--secondary-bg-color);
+  margin-bottom: -4px;
+}
+/* Featured Area */
+.featured {
+  background-color: var(--secondary-bg-color);
+  padding: 64px 0;
+}
+
+.feature {
+  grid-column: span 3;
+  text-align: center;
+}
+.feature h3 {
+  font-size: 2.25rem;
+  line-height: 1.11;
+  margin-bottom: 4px;
+}
+.feature p {
+  font-size: 0.875rem;
+  line-height: 1.5;
 }
