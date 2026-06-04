@@ -29,13 +29,16 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <!-- Header Area -->
     <header>
       <div class="container">
+        <!-- Logo -->
         <div class="logo">
           <a href="index.html">
             <img src="images/logo.svg" alt="" />
           </a>
         </div>
+        <!-- Main Menu -->
         <nav>
           <ul>
             <li><a href="#">About</a></li>
@@ -45,6 +48,7 @@
                 <a href="#">Services</a>
                 <i class="fa-solid fa-angle-down"></i>
               </div>
+              <!-- Dropdown -->
               <ul class="dropdown">
                 <li><a href="#">Residential Solar</a></li>
                 <li><a href="#">Commercial Solar</a></li>
@@ -56,6 +60,7 @@
             <li><a href="#">Contact</a></li>
           </ul>
         </nav>
+        <!-- Left Button -->
         <div class="nav_btn">
           <button>
             <i class="icon fa-solid fa-sun"></i>
@@ -64,5 +69,105 @@
         </div>
       </div>
     </header>
+    <main>
+      <!-- Hero Are -->
+      <section class="hero">
+        <div class="container">
+          <article class="content">
+            <div class="indicator">
+              <i class="fa-solid fa-circle fa-beat"></i>
+              <p>Go Solar Today</p>
+            </div>
+            <h1>
+              Power Your Home
+              <br />
+              <span class="highlighted_heading">Sustainably</span>
+            </h1>
+            <p>
+              Harness the power of the sun to reduce your energy bills and
+              protect the environment. SolarShift delivers professional
+              installation, premium equipment, and savings you can count on.
+            </p>
+            <div class="btn_group">
+              <a href="#" class="btn">
+                Get Free Quote <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="tel:(555) 763-2748" class="secondary_btn">
+                <i class="fa-solid fa-phone"></i> Call (555) 763-2748
+              </a>
+            </div>
+            <p>Join 10,000+ homeowners who switched to solar</p>
+            <div class="counter">
+              <div>
+                <h3>25,088+</h3>
+                <small>Trees Saved</small>
+              </div>
+              <div>
+                <h3>8,583+</h3>
+                <small>Tons CO<sub>2</sub> Offset</small>
+              </div>
+            </div>
+          </article>
+          <form action="">
+            <div class="form_heading">
+              <h3>Estimate Your Savings</h3>
+              <p>See how much you could save with solar</p>
+            </div>
+            <div class="form_field">
+              <label for="state">Your State</label>
+              <select name="state" id="state" autofocus>
+                <option value="Arizona">Arizona</option>
+                <option value="California">California</option>
+                <option value="Texas">Texas</option>
+                <option value="Florida">Florida</option>
+                <option value="Arizona">Arizona</option>
+                <option value="New York">New York</option>
+                <option value="Colorado">Colorado</option>
+                <option value="Nevada">Nevada</option>
+                <option value="Georgia">Georgia</option>
+              </select>
+            </div>
+            <div class="form_field">
+              <div class="label">
+                <label for="ElectricBill">Monthly Electric Bill</label>
+                <span>$150</span>
+              </div>
+              <input
+                type="range"
+                name="ElectricBill"
+                id="ElectricBill"
+                min="50"
+                max="500"
+                value="150"
+                step="10"
+              />
+              <div class="range_minmax">
+                <span>$50</span>
+                <span>$500</span>
+              </div>
+            </div>
+            <div class="form_card">
+              <div class="card_box">
+                <h3>$1,989</h3>
+                <p>Annual Savings</p>
+              </div>
+              <div class="card_box">
+                <h3>11.3 tons</h3>
+                <p>CO<sub>2</sub> Offset/yr</p>
+              </div>
+              <div class="card_box">
+                <h3>8.8 yrs</h3>
+                <p>Payback Period</p>
+              </div>
+              <div class="card_box">
+                <h3>$7,500</h3>
+                <p>Federal Tax Credit</p>
+              </div>
+            </div>
+            <input class="btn" type="submit" value="Get Free Assessment" />
+          </form>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
