@@ -38,7 +38,7 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   font-size: var(--text-size);
-  line-height: 1.125;
+  line-height: 1.5;
 }
 
 img {
@@ -59,6 +59,10 @@ h5,
 h6 {
   color: var(--heading-color);
   font-weight: var(--heading-font-weight);
+}
+
+section {
+  padding: 112px 0;
 }
 
 .btn {
@@ -201,7 +205,7 @@ nav ul li.group:hover ul.dropdown {
 }
 
 /* Hero Area */
-.hero {
+section.hero {
   background-image: linear-gradient(var(--secondary-bg-color), var(--bg-color));
   height: max(100vh, 850px);
 }
@@ -211,9 +215,12 @@ section .container {
 }
 
 article.content {
-  grid-column: span 6;
   display: flex;
   flex-direction: column;
+}
+
+section.hero article.content {
+  grid-column: span 6;
   gap: 30px;
   align-items: start;
   max-width: 520px;
@@ -446,7 +453,7 @@ form input[type='submit'] {
 }
 .wave {
   color: var(--secondary-bg-color);
-  margin-bottom: -4px;
+  margin-bottom: -6px;
 }
 /* Featured Area */
 .featured {
@@ -469,9 +476,6 @@ form input[type='submit'] {
 }
 
 /* Services Area */
-section#service {
-  padding: 112px 0;
-}
 .section_title {
   display: flex;
   flex-direction: column;
@@ -518,4 +522,59 @@ section#service {
 .service_card h3 {
   font-size: 1.125rem;
   font-weight: var(--card-heading-font-weight);
+}
+
+/* Product Area */
+section#products {
+  background-color: var(--secondary-bg-color);
+}
+
+.product_card {
+  grid-column: span 4;
+  border-radius: 16px;
+  background-color: var(--border-color);
+  overflow: hidden;
+}
+.product_img {
+  /* background-image: url(./images/product3.jfif); */
+  width: 100%;
+  aspect-ratio: 3/2;
+  transition: all 0.5s;
+  z-index: -1;
+}
+
+.product_img:hover {
+  transform: scale(1.075);
+}
+
+.product_card article.content {
+  padding: 24px;
+  gap: 10px;
+  z-index: 5;
+}
+.product_card article.content h3 {
+  font-size: 1.125rem;
+}
+.product_card article.content > p {
+  font-size: 0.875rem;
+}
+.product_card article.content > div {
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.product_feature {
+  text-align: center;
+  background-color: #374151;
+  flex-basis: calc(33.333% - 12px);
+  padding: 8px;
+  border-radius: 8px;
+}
+.product_feature h5 {
+  font-size: 0.875rem;
+}
+.product_feature p {
+  font-size: 0.75rem;
 }
