@@ -807,3 +807,36 @@ section.cta .btn_group .secondary_btn {
 section.cta .btn_group .secondary_btn:hover {
   background-color: color-mix(#ffffff 10%, transparent);
 }
+
+/* FAQ Area */
+.faq_container {
+  max-width: 48rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+section.faq .faq_container .card {
+  padding: 0;
+}
+section.faq .faq_container .question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: var(--card-heading-font-weight);
+  overflow: hidden;
+}
+.rotate {
+  transform: rotate(-45deg);
+  transition: transform 0.5s ease;
+}
+.faq_container .answer {
+  border-top: 1px solid var(--border-color);
+  padding: 16px 24px;
+  display: none;
+  font-size: 0.875rem;
+}
