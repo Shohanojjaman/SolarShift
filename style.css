@@ -1137,3 +1137,26 @@ section.values {
 section.values .card {
   background-color: var(--border-color);
 }
+
+/* Our Team Area */
+.team {
+  grid-column: span 3;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+.team img {
+  max-width: 160px;
+  border-radius: 50%;
+}
+
+.team h3 {
+  font-size: 1.125rem;
+  font-weight: var(--secondary-heading-font-weight);
+}
+
+.team p {
+  font-size: 0.875rem;
+}
