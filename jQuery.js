@@ -1,4 +1,9 @@
 $(document).ready(function () {
+  // Mobile Menu
+  $('.bars').click(function () {
+    $(this).next('.mobile_menu').slideToggle(500);
+    // $(this).find('i').toggleClass('rotate');
+  });
   // FAQ
   $('.question').click(function () {
     $(this).next('.answer').slideToggle(500);

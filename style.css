@@ -118,7 +118,7 @@ header {
 
 .container {
   max-width: 1536px;
-  padding: 0 20px;
+  padding: 0 32px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   margin: 0 auto;
@@ -216,10 +216,13 @@ ul.dropdown:hover ul.dropdown {
   background-color: transparent;
 }
 
+nav.mobile_menu,
+.bars {
+  display: none;
+}
 /* Hero Area */
 section.hero {
   background-image: linear-gradient(var(--secondary-bg-color), var(--bg-color));
-  height: max(100vh, 850px);
 }
 
 section .container {
@@ -549,7 +552,8 @@ section#products {
   width: 100%;
   aspect-ratio: 3/2;
   transition: all 0.5s;
-  /* z-index: -1; */
+  background-size: cover;
+  background-position: center;
 }
 
 .product_img:hover {
@@ -843,6 +847,7 @@ section.faq .faq_container .question {
 
 /* Contact Area */
 #contact .container {
+  margin: 0 auto;
   gap: 48px;
 }
 #contact form {
