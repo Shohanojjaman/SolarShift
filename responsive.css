@@ -17,6 +17,11 @@
   footer .container > div:nth-child(1) {
     padding-right: 60px;
   }
+
+  /* About Page */
+  section.values .service_card {
+    grid-column: span 4;
+  }
 }
 
 /* // Large devices (desktops, 992px to 1199px) */
@@ -181,6 +186,23 @@
   .btn_group {
     flex-direction: column;
   }
+  /* About Page */
+  .mission article.content,
+  .mission .mission_img {
+    grid-column: span 12;
+  }
+  .mission article.content {
+    order: 2;
+  }
+  .mission .mission_img {
+    order: 1;
+  }
+  section.values .service_card {
+    grid-column: span 12;
+  }
+  .team {
+    grid-column: span 6;
+  }
 }
 
 /* Small devices (landscape phones, 576px to 767px) */
@@ -287,5 +309,10 @@
     flex-direction: column;
     align-items: center;
     gap: 15px;
+  }
+  /* About Page */
+
+  .team {
+    grid-column: span 12;
   }
 }
