@@ -209,6 +209,10 @@
   section.battery .card {
     grid-column: span 12;
   }
+
+  section.pricing .card {
+    grid-column: span 12;
+  }
 }
 
 /* Small devices (landscape phones, 576px to 767px) */
