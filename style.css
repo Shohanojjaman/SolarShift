@@ -1057,3 +1057,33 @@ footer .container > div:nth-child(3) ul li address {
   justify-content: space-between;
   align-items: center;
 }
+
+/* About Page */
+section.page_title {
+  background-image: linear-gradient(var(--theme-bg-color), var(--bg-color));
+  padding: 80px 0;
+}
+section.page_title .section_title {
+  grid-column: span 12;
+  gap: 20px;
+  color: #ffffff;
+  margin: 0 auto;
+}
+section.page_title .section_heading {
+  font-size: 3rem;
+  line-height: 1;
+}
+section.page_title .section_title .sub_heading {
+  padding: 6px 16px;
+  border: none;
+  font-size: 0.875rem;
+  background-color: color-mix(#ffffff 20%, transparent);
+  color: #ffffff;
+}
+
+nav.breadcrumb {
+  font-size: 0.875rem;
+}
+nav.breadcrumb ul {
+  gap: 8px;
+}
