@@ -1087,3 +1087,44 @@ nav.breadcrumb {
 nav.breadcrumb ul {
   gap: 8px;
 }
+.mission .container {
+  align-items: center;
+}
+.mission article.content,
+.mission .mission_img {
+  grid-column: span 6;
+}
+
+.mission article.content {
+  align-items: flex-start;
+  gap: 16px;
+}
+.mission article.content h2 {
+  font-size: 2.25rem;
+}
+.mission article.content q {
+  color: var(--theme-text-color);
+  font-size: 1.125rem;
+  font-style: italic;
+  font-weight: var(--secondary-heading-font-weight);
+}
+
+.mission article.content p {
+  font-size: 1rem;
+}
+.mission .mission_img img {
+  width: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.icon_box {
+  display: flex;
+  background-color: var(--icon-bg-color);
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: 30px;
+  gap: 8px;
+  font-size: 0.875rem;
+  color: #86efac;
+}
