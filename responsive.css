@@ -203,6 +203,12 @@
   .team {
     grid-column: span 6;
   }
+
+  /* Product Page */
+  section.inverters .card,
+  section.battery .card {
+    grid-column: span 12;
+  }
 }
 
 /* Small devices (landscape phones, 576px to 767px) */
