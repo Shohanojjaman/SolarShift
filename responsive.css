@@ -87,7 +87,7 @@
     width: 100%;
   }
   .nav_btn {
-    grid-column: 9 / span 3;
+    grid-column: 7 / span 5;
   }
   .bars {
     grid-column-start: 12;
@@ -178,6 +178,9 @@
     grid-column: span 12;
     padding-right: 0;
   }
+  .btn_group {
+    flex-direction: column;
+  }
 }
 
 /* Small devices (landscape phones, 576px to 767px) */
@@ -185,9 +188,6 @@
   .container {
     max-width: 640px;
     padding: 0 2rem;
-  }
-  .nav_btn {
-    grid-column: 7 / span 5;
   }
   section.hero article.content {
     width: 100%;
