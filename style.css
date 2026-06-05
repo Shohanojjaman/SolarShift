@@ -1128,3 +1128,12 @@ nav.breadcrumb ul {
   font-size: 0.875rem;
   color: #86efac;
 }
+
+/* Our Values Area */
+section.values {
+  background-color: var(--secondary-bg-color);
+}
+
+section.values .card {
+  background-color: var(--border-color);
+}
