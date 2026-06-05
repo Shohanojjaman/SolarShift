@@ -1060,7 +1060,9 @@ footer .container > div:nth-child(3) ul li address {
   align-items: center;
 }
 
-/* About Page */
+/* ==========
+About Page
+============= */
 section.page_title {
   background-image: linear-gradient(var(--theme-bg-color), var(--bg-color));
   padding: 80px 0;
@@ -1161,4 +1163,45 @@ section.values .card {
 
 .team p {
   font-size: 0.875rem;
+}
+
+/* =============
+Products Page
+================ */
+section.inverters {
+  background-color: var(--secondary-bg-color);
+}
+section.inverters .icon_box,
+section.battery .icon_box {
+  font-size: 0.75rem;
+}
+section.inverters .card,
+section.battery .card {
+  grid-column: span 4;
+  background-color: var(--border-color);
+  align-items: flex-start;
+  gap: 12px;
+}
+.product_details {
+  --border-color: #374151;
+  width: 100%;
+  padding-top: 12px;
+  border-top: 1px solid var(--border-color);
+}
+.product_details > div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  line-height: 1.75;
+}
+.product_details > div p:last-child {
+  color: white;
+  font-weight: var(--secondary-heading-font-weight);
+}
+
+section.battery .card {
+  background-color: var(--secondary-bg-color);
+}
+section.battery .card img {
+  border-radius: 16px;
 }
