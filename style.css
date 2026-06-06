@@ -877,6 +877,7 @@ section.faq .faq_container .question {
 }
 
 section.blog .label input,
+section.newsletter form input[type='email'],
 #contact form .label input,
 #contact form .label textarea,
 #contact form .label select {
@@ -894,13 +895,15 @@ section.blog .label input,
   justify-self: self-start;
   padding: 12px 24px;
 }
-
+section.newsletter form input[type='email']:focus,
 section.blog .label input:focus,
 #contact form .label input:focus,
 #contact form .label textarea:focus,
 #contact form .label select:focus {
   outline: 2px solid var(--primary-color);
 }
+
+section.newsletter form input[type='email']::placeholder,
 section.blog .label input::placeholder,
 #contact form .label input::placeholder,
 #contact form .label textarea::placeholder,
@@ -1329,6 +1332,8 @@ section.blog .label i {
 .tags ul {
   display: flex;
   gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .tags ul li {
   list-style: none;
@@ -1386,4 +1391,33 @@ section.blog .card article h3 {
 
 .author h5 {
   font-size: 0.875rem;
+}
+
+section.newsletter .container > div {
+  display: flex;
+  flex-direction: column;
+  grid-column: 4 / span 6;
+  background-color: var(--border-color);
+  padding: 64px 32px;
+  border-radius: 16px;
+  align-items: center;
+  gap: 16px;
+  font-size: 1.125rem;
+  text-align: center;
+}
+
+section.newsletter form {
+  padding: 32px 0 0;
+  flex-direction: row;
+  gap: 16px;
+  background-color: transparent;
+  border: none;
+}
+section.newsletter form input[type='email'] {
+  padding: 12px 24px;
+  border-radius: 30px;
+}
+section.newsletter form input[type='submit'] {
+  padding: 10px 20px;
+  border-radius: 30px;
 }
