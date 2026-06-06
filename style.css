@@ -875,6 +875,8 @@ section.faq .faq_container .question {
   gap: 4px;
   font-size: 0.875rem;
 }
+
+section.blog .label input,
 #contact form .label input,
 #contact form .label textarea,
 #contact form .label select {
@@ -892,11 +894,14 @@ section.faq .faq_container .question {
   justify-self: self-start;
   padding: 12px 24px;
 }
+
+section.blog .label input:focus,
 #contact form .label input:focus,
 #contact form .label textarea:focus,
 #contact form .label select:focus {
   outline: 2px solid var(--primary-color);
 }
+section.blog .label input::placeholder,
 #contact form .label input::placeholder,
 #contact form .label textarea::placeholder,
 #contact form .label select::placeholder {
@@ -1275,4 +1280,110 @@ section.pricing .card ul li.downside i {
   grid-column: span 12;
   font-size: 0.875rem;
   text-align: center;
+}
+
+/* ========
+Blog Page
+=========== */
+
+section.blog .container > div:first-child {
+  grid-column: span 12;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+section.blog .card {
+  grid-column: span 4;
+  padding: 0;
+}
+
+section.blog .label {
+  position: relative;
+}
+
+section.blog .label input {
+  max-width: 36rem;
+  margin: 0 auto;
+  border-radius: 30px;
+  padding: 12px 16px 12px 48px;
+  background-color: var(--secondary-bg-color);
+}
+
+section.blog .label i {
+  position: absolute;
+}
+
+section.blog .label i {
+  left: 469px;
+  position: absolute;
+  z-index: 9;
+  top: calc(50% - 9px);
+}
+
+.tags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tags ul {
+  display: flex;
+  gap: 8px;
+}
+.tags ul li {
+  list-style: none;
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-size: 0.875rem;
+  line-height: 1.25;
+  cursor: pointer;
+}
+
+.tags ul li:not(:first-child) {
+  background-color: var(--border-color);
+}
+
+section.blog .card > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section.blog .card > img {
+  border-radius: 16px 16px 0 0;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+}
+section.blog .card article {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 0.875rem;
+}
+section.blog .card article div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.875rem;
+}
+
+section.blog .card article h3 {
+  font-size: 1.25rem;
+}
+
+.author {
+  display: flex;
+  gap: 12px;
+  font-size: 0.75rem;
+}
+
+.author img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.author h5 {
+  font-size: 0.875rem;
 }
