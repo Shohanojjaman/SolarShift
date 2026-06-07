@@ -46,11 +46,30 @@ $(document).ready(function () {
     $(this).next('.answer').slideToggle(500);
     $(this).find('i').toggleClass('rotate');
   });
+
   // Cookies
-  $('#decline').click(() => {
-    $('.cookies').fadeOut(300);
+  const $cookieBanner = $('#cookie_banner_container');
+  const $acceptBtn = $('#accept_cookies');
+  const $declineBtn = $('#decline_cookies');
+
+  // Check if the user already clicked "Accept" or "Decline" before
+  const userChoice = localStorage.getItem('cookie_consent');
+
+  if (userChoice === 'yes' || userChoice === 'no') {
+    $cookieBanner.hide(); // Hide the banner if already decided
+  } else {
+    $cookieBanner.show(); // Show the banner if first time visiting
+  }
+
+  // When user clicks Accept
+  $acceptBtn.on('click', function () {
+    localStorage.setItem('cookie_consent', 'yes'); // Save "yes" in browser memory
+    $cookieBanner.fadeOut(400); // Hide the banner smoothly
   });
-  $('#accept').click(() => {
-    $('.cookies').fadeOut(300);
+
+  // When user clicks Decline
+  $declineBtn.on('click', function () {
+    localStorage.setItem('cookie_consent', 'no'); // Save "no" in browser memory
+    $cookieBanner.fadeOut(400); // Hide the banner smoothly
   });
 });
