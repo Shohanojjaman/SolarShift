@@ -220,27 +220,40 @@
   section.pricing .card {
     grid-column: span 12;
   }
-
-  /* Blog Page */
-
-  /* Small devices (landscape phones, 576px to 767px) */
-  @media (max-width: 767px) {
-    .container {
-      max-width: 640px;
-      padding: 0 2rem;
-    }
-    section.hero article.content {
-      width: 100%;
-    }
-    #contact form .label {
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-      font-size: 0.875rem;
-      grid-column: span 2;
-    }
+  .blog_details h1 {
+    font-size: 2.25rem;
+  }
+  .blog_details article {
+    width: 90%;
   }
 }
+/* Blog Page */
+
+/* Small devices (landscape phones, 576px to 767px) */
+@media (max-width: 767px) {
+  .container {
+    max-width: 640px;
+    padding: 0 2rem;
+  }
+  section.hero article.content {
+    width: 100%;
+  }
+  #contact form .label {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 0.875rem;
+    grid-column: span 2;
+  }
+  .blog_details h1 {
+    font-size: 1.875rem;
+    line-height: 1.2;
+  }
+  .blog_details article {
+    width: 100%;
+  }
+}
+
 /* X-Small devices (Phone, 575 and down) */
 @media (max-width: 575px) {
   .container {

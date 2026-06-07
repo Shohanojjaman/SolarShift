@@ -66,6 +66,11 @@ section {
   padding: 112px 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .btn {
   text-decoration: none;
   color: var(--heading-color);
@@ -1099,6 +1104,10 @@ nav.breadcrumb {
 nav.breadcrumb ul {
   gap: 8px;
 }
+
+nav.breadcrumb ul li:last-child {
+  color: #fff;
+}
 .mission .container {
   align-items: center;
 }
@@ -1420,4 +1429,75 @@ section.newsletter form input[type='email'] {
 section.newsletter form input[type='submit'] {
   padding: 10px 20px;
   border-radius: 30px;
+}
+
+/* ===============
+Blog Details Page
+================== */
+.blog_details {
+  grid-column: span 12;
+  padding: 32px 0;
+  max-width: 48rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  font-size: 1.125rem;
+}
+
+.blog_details nav.breadcrumb {
+  justify-content: start;
+}
+
+.blog_details > a {
+  color: var(--theme-text-color);
+}
+.blog_details h1 {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.blog_details hr {
+  width: 100%;
+  border: 1px solid var(--border-color);
+}
+
+.blog_details > img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.blog_details article {
+  padding: 48px 0;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  font-size: 1rem;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.blog_details article div {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.blog_details article div h3 {
+  font-size: 1.5rem;
+}
+
+.social_share {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.social_share {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  color: #fff;
+  font-size: 0.875rem;
 }
