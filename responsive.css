@@ -150,6 +150,10 @@
     width: 80%;
     margin: 0 auto;
   }
+  /* form input[type='submit'] {
+    padding: 12px 24px;
+    align-self: flex-start;
+  } */
 
   .service_card {
     align-items: flex-start;
@@ -275,6 +279,18 @@
   }
   .nav_btn {
     grid-column: span 6;
+    margin-right: 16px;
+  }
+  .nav_btn a {
+    display: none;
+  }
+  .mobile_menu .nav_btn {
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border-color);
+  }
+  .mobile_menu .nav_btn a {
+    display: block;
   }
   section.hero article.content {
     align-items: self-start;
