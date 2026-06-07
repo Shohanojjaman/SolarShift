@@ -180,7 +180,9 @@ nav ul li.group {
 }
 
 ul.dropdown {
-  display: none;
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
   flex-direction: column;
   z-index: 99;
   padding: 8px;
@@ -191,7 +193,11 @@ ul.dropdown {
   top: 28px;
   min-width: 190px;
   gap: 0;
-  transition: display 5s;
+  transform: translateY(12px);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    visibility 0.3s;
 }
 
 ul.dropdown li a {
@@ -204,9 +210,10 @@ ul.dropdown a:hover {
   background-color: var(--border-color);
 }
 
-nav ul li:hover ul.dropdown,
-ul.dropdown:hover ul.dropdown {
-  display: flex;
+nav ul li:hover ul.dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 
 .nav_btn {
