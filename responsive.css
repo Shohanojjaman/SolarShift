@@ -226,6 +226,12 @@
   .blog_details article {
     width: 90%;
   }
+  section#contact_form .container > div:first-child {
+    grid-column: span 12;
+  }
+  .get_in_touch {
+    grid-column: span 12;
+  }
 }
 /* Blog Page */
 
@@ -238,6 +244,7 @@
   section.hero article.content {
     width: 100%;
   }
+  #contact_form form .label,
   #contact form .label {
     display: flex;
     flex-direction: column;

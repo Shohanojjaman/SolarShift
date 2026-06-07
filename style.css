@@ -857,6 +857,7 @@ section.faq .faq_container .question {
   margin: 0 auto;
   gap: 48px;
 }
+#contact_form form,
 #contact form {
   grid-column: span 12;
   width: 42rem;
@@ -868,19 +869,23 @@ section.faq .faq_container .question {
   padding: 0;
   background-color: transparent;
 }
-
+#contact_form form .service,
+#contact_form form .message,
 #contact form .service,
 #contact form .message {
   grid-column: span 2;
 }
 
+#contact_form form .label,
 #contact form .label {
   display: flex;
   flex-direction: column;
   gap: 4px;
   font-size: 0.875rem;
 }
-
+#contact_form form .label input,
+#contact_form form .label textarea,
+#contact_form form .label select,
 section.blog .label input,
 section.newsletter form input[type='email'],
 #contact form .label input,
@@ -1500,4 +1505,53 @@ Blog Details Page
   gap: 16px;
   color: #fff;
   font-size: 0.875rem;
+}
+
+#contact_form form {
+  width: 100%;
+}
+section#contact_form .container > div:first-child {
+  grid-column: span 8;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#contact_form h3 {
+  font-size: 1.5rem;
+}
+#contact_form form input[type='submit'] {
+  padding: 12px 24px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  justify-self: self-start;
+}
+
+.get_in_touch {
+  grid-column: span 4;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.get_in_touch > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  font-size: 1rem;
+}
+.get_in_touch > div > div {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+.get_in_touch > div > div h5 {
+  font-size: 1rem;
+}
+.get_in_touch > div > div .icon_box {
+  padding: 10px;
+  border-radius: 8px;
+}
+.map iframe {
+  width: 100%;
+  height: 20rem;
 }
