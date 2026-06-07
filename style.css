@@ -848,6 +848,12 @@ section.faq .faq_container .question {
   font-weight: var(--card-heading-font-weight);
   overflow: hidden;
 }
+.faq_container .question i {
+  transition: transform 0.4s ease-in-out;
+}
+.faq_container .question.active i {
+  transform: rotate(-45deg);
+}
 .rotate {
   transform: rotate(-45deg);
   transition: transform 0.5s ease;
